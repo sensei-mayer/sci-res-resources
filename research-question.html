@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting Research Questions & Hypotheses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Style for the expand/collapse icon */
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        .rotate-0 {
+            transform: rotate(0deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 sm:p-8 rounded-t-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
+                💡 Crafting a Good Research Question & Hypothesis
+            </h1>
+            <p class="text-lg sm:text-xl text-center opacity-90">
+                The foundation of any great scientific endeavor.
+            </p>
+        </header>
+
+        <main class="p-6 sm:p-8 md:p-10">
+            <a href="index.html" class="inline-block mb-6 py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-sm hover:bg-gray-300 transition-colors duration-200">
+                &larr; Back to Home
+            </a>
+
+            <section class="bg-gray-50 p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    The foundation of any great scientific endeavor is a clear, focused research question and a testable hypothesis. This section will guide you through the process of formulating these critical starting points.
+                </p>
+                <button class="flex items-center justify-between w-full py-2 px-4 bg-blue-100 text-blue-800 font-semibold rounded-lg shadow-sm hover:bg-blue-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="toggleSection('research-question-content')">
+                    <span>View All Resources</span>
+                    <span id="research-question-icon" class="transform transition-transform duration-200">+</span>
+                </button>
+                <div id="research-question-content" class="mt-4 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>
+                            <strong>What makes a good question? The SMART Framework:</strong>
+                            <p class="ml-4 mt-2">A strong research question is often described using the SMART criteria:</p>
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li><strong>S - Specific:</strong> Clearly defined and focused, avoiding vague terms.</li>
+                                <li><strong>M - Measurable:</strong> Quantifiable or observable outcomes can be determined.</li>
+                                <li><strong>A - Achievable:</strong> Possible to answer with available resources and time.</li>
+                                <li><strong>R - Relevant:</strong> Directly relates to your interests and the scientific field.</li>
+                                <li><strong>T - Time-bound:</strong> Can be addressed within a realistic timeframe.</li>
+                            </ul>
+                            <p class="ml-4 mt-2">
+                                <em>Example:</em> "How does varying the concentration of nitrogen fertilizer (0%, 5%, 10%) affect the average growth rate (in cm/day) of tomato plants over a three-week period in a controlled greenhouse environment?"
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Developing a Hypothesis:</strong>
+                            <p class="ml-4 mt-2">
+                                A hypothesis is an educated guess or a testable prediction about the relationship between two or more variables. It's often stated in an "If...then...because" format. It should be falsifiable, meaning it can be proven wrong through experimentation.
+                            </p>
+                            <p class="ml-4 mt-2">
+                                <em>Example:</em> "If the concentration of nitrogen fertilizer applied to tomato plants is increased, then their average daily growth rate will increase, because nitrogen is a key nutrient for plant cell division and protein synthesis."
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Variables: Understanding Independent, Dependent, and Controlled Variables:</strong>
+                            <p class="ml-4 mt-2">
+                                Variables are factors, traits, or conditions that can exist in differing amounts or types. Understanding them is crucial for designing a valid experiment.
+                            </p>
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li>
+                                    <strong>Independent Variable (IV):</strong> The factor that is intentionally changed or manipulated by the researcher. It's what you are testing.
+                                    <p class="ml-4 mt-1"><em>Example:</em> In the tomato plant experiment, the <strong>concentration of nitrogen fertilizer</strong> is the independent variable.</p>
+                                </li>
+                                <li>
+                                    <strong>Dependent Variable (DV):</strong> The factor that is measured or observed, and it is expected to change in response to the independent variable. It's what you are measuring.
+                                    <p class="ml-4 mt-1"><em>Example:</em> The <strong>average growth rate (in cm/day)</strong> of the tomato plants is the dependent variable.</p>
+                                </li>
+                                <li>
+                                    <strong>Controlled Variables (Constants):</strong> Factors that are kept the same throughout the experiment to ensure that only the independent variable is affecting the dependent variable.
+                                    <p class="ml-4 mt-1"><em>Example:</em> In the tomato plant experiment, controlled variables would include the type of tomato plant, amount of water, light exposure, temperature, type of soil, and duration of the experiment.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Examples & Resources:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.sciencebuddies.org/science-fair-projects/project-ideas/research-question" class="text-blue-500 hover:underline" target="_blank">Science Buddies: How to Write a Good Hypothesis</a></li>
+                                <li><a href="https://owl.purdue.edu/owl/research_and_citation/research_and_citation_general_resources/developing_a_research_question.html" class="text-blue-500 hover:underline" target="_blank">Purdue OWL: Developing a Research Question</a></li>
+                                <li><a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-scientific-method/a/the-scientific-method" class="text-blue-500 hover:underline" target="_blank">Khan Academy: Scientific Method (includes hypothesis)</a></li>
+                                <li><a href="https://www.scribbr.com/research-paper/research-question/" class="text-blue-500 hover:underline" target="_blank">Scribbr: How to Write a Research Question</a></li>
+                                <li><a href="https://www.exploratorium.edu/science_explorer/how_to_ask_a_question.html" class="text-blue-500 hover:underline" target="_blank">Exploratorium: How to Ask a Question</a></li>
+                                <li><a href="https://www.nsta.org/nsta-guide-to-writing-research-questions" class="text-blue-500 hover:underline" target="_blank">NSTA Guide to Writing Research Questions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="bg-blue-50 p-6 rounded-xl shadow-md mb-8 border border-blue-200">
+                <h2 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-4 border-b-2 border-blue-300 pb-2">
+                    ✨ AI Research Question Assistant
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Stuck on your research question? Enter a broad topic or a preliminary idea below, and our AI assistant can help you generate more specific, focused, and "SMART" research questions.
+                </p>
+                <div class="mb-4">
+                    <label for="researchTopic" class="block text-gray-700 text-sm font-bold mb-2">
+                        Enter your topic or preliminary idea:
+                    </label>
+                    <textarea id="researchTopic" rows="4" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="e.g., climate change impact on oceans, new battery technologies, social media and mental health"></textarea>
+                </div>
+                <button id="generateQuestionBtn" class="w-full py-3 px-4 bg-purple-600 text-white font-bold rounded-lg shadow-md hover:bg-purple-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                    ✨ Generate Research Questions
+                </button>
+                <div id="loadingIndicator" class="hidden text-center mt-4 text-blue-600 font-semibold">
+                    Generating ideas... Please wait.
+                </div>
+                <div id="generatedQuestions" class="mt-6 p-4 bg-white rounded-lg shadow-inner border border-gray-200 text-gray-800 prose max-w-none">
+                    <p class="text-gray-500">Your generated research questions will appear here.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 sm:p-8 rounded-b-2xl text-center">
+            <p class="text-sm sm:text-base mb-2">
+                © 2025 Student Science Research Hub. All rights reserved.
+            </p>
+            <p class="text-xs sm:text-sm opacity-80">
+                This page was created with the assistance of AI, and some links may not work properly. If a link does not work properly or you would like a resource added to the list, email <a href="mailto:smayer@cornwallschools.com" class="underline hover:text-blue-300">smayer@cornwallschools.com</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a content section and updates its icon.
+         * @param {string} contentId The ID of the content div to toggle.
+         */
+        function toggleSection(contentId) {
+            const content = document.getElementById(contentId);
+            // Assuming icon ID is contentId with '-content' replaced by '-icon'
+            const icon = document.getElementById(contentId.replace('-content', '-icon'));
+
+            if (content.classList.contains('hidden')) {
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('block'); // Use 'block' for display
+                icon.textContent = '−'; // Change icon to minus
+                icon.classList.remove('rotate-0');
+                icon.classList.add('rotate-45'); // Rotate for a visual effect
+            } else {
+                // Hide content
+                content.classList.remove('block');
+                content.classList.add('hidden');
+                icon.textContent = '+'; // Change icon back to plus
+                icon.classList.remove('rotate-45');
+                icon.classList.add('rotate-0');
+            }
+        }
+
+        // Gemini API Integration for Research Question Assistant
+        document.getElementById('generateQuestionBtn').addEventListener('click', async () => {
+            const researchTopic = document.getElementById('researchTopic').value.trim();
+            const generatedQuestionsDiv = document.getElementById('generatedQuestions');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+
+            if (!researchTopic) {
+                generatedQuestionsDiv.innerHTML = '<p class="text-red-500">Please enter a topic or idea to generate research questions.</p>';
+                return;
+            }
+
+            loadingIndicator.classList.remove('hidden');
+            generatedQuestionsDiv.innerHTML = ''; // Clear previous results
+
+            try {
+                let chatHistory = [];
+                const prompt = `Given the topic or idea: "${researchTopic}", generate 3-5 specific, measurable, achievable, relevant, and time-bound (SMART) research questions suitable for a high school science research project. For each question, briefly explain why it is SMART. Format the output as a bulleted list with clear headings for each question and its explanation.`;
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Leave as-is; Canvas will provide at runtime.
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    generatedQuestionsDiv.innerHTML = `<h3 class="text-xl font-semibold mb-2">Generated Research Questions:</h3>${text}`;
+                } else {
+                    generatedQuestionsDiv.innerHTML = '<p class="text-red-500">Could not generate research questions. Please try again or refine your input.</p>';
+                    console.error('Gemini API response structure unexpected:', result);
+                }
+            } catch (error) {
+                generatedQuestionsDiv.innerHTML = `<p class="text-red-500">An error occurred: ${error.message}. Please try again.</p>`;
+                console.error('Error calling Gemini API:', error);
+            } finally {
+                loadingIndicator.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

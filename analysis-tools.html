@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools for Scientific Analysis or Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Style for the expand/collapse icon */
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        .rotate-0 {
+            transform: rotate(0deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 sm:p-8 rounded-t-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
+                🛠️ Tools for Scientific Analysis or Development
+            </h1>
+            <p class="text-lg sm:text-xl text-center opacity-90">
+                Software and platforms to analyze findings and develop projects.
+            </p>
+        </header>
+
+        <main class="p-6 sm:p-8 md:p-10">
+            <a href="index.html" class="inline-block mb-6 py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-sm hover:bg-gray-300 transition-colors duration-200">
+                &larr; Back to Home
+            </a>
+
+            <section class="bg-gray-50 p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    From data visualization to coding environments, these tools can help you analyze your findings and develop your projects.
+                </p>
+                <button class="flex items-center justify-between w-full py-2 px-4 bg-blue-100 text-blue-800 font-semibold rounded-lg shadow-sm hover:bg-blue-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="toggleSection('analysis-tools-content')">
+                    <span>View All Resources</span>
+                    <span id="analysis-tools-icon" class="transform transition-transform duration-200">+</span>
+                </button>
+                <div id="analysis-tools-content" class="mt-4 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>Spreadsheet Software & Data Management:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://docs.google.com/spreadsheets/" class="text-blue-500 hover:underline" target="_blank">Google Sheets (Free, web-based)</a></li>
+                                <li><a href="https://support.microsoft.com/en-us/excel" class="text-blue-500 hover:underline" target="_blank">Microsoft Excel (Tutorials & Templates)</a></li>
+                                <li><a href="https://www.openoffice.org/product/calc.html" class="text-blue-500 hover:underline" target="_blank">Apache OpenOffice Calc (Free desktop alternative)</a></li>
+                                <li><a href="https://www.libreoffice.org/discover/calc/" class="text-blue-500 hover:underline" target="_blank">LibreOffice Calc (Another free desktop alternative)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Statistical Analysis & Programming:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.r-project.org/" class="text-blue-500 hover:underline" target="_blank">R Project for Statistical Computing (Free, powerful)</a></li>
+                                <li><a href="https://www.rstudio.com/products/rstudio/download/" class="text-blue-500 hover:underline" target="_blank">RStudio Desktop (IDE for R)</a></li>
+                                <li><a href="https://www.python.org/" class="text-blue-500 hover:underline" target="_blank">Python (General purpose programming, vast science libraries)</a></li>
+                                <li><a href="https://jupyter.org/" class="text-blue-500 hover:underline" target="_blank">Jupyter Notebooks (Interactive computing with Python/R)</a></li>
+                                <li><a href="https://colab.research.google.com/" class="text-blue-500 hover:underline" target="_blank">Google Colaboratory (Free cloud Jupyter notebooks)</a></li>
+                                <li><a href="https://jasp-stats.org/" class="text-blue-500 hover:underline" target="_blank">JASP (Free & open-source statistical software, user-friendly)</a></li>
+                                <li><a href="https://www.gnu.org/software/pspp/" class="text-blue-500 hover:underline" target="_blank">GNU PSPP (Free alternative to SPSS)</a></li>
+                                <li><a href="https://www.scipy.org/" class="text-blue-500 hover:underline" target="_blank">SciPy (Python library for scientific computing)</a></li>
+                                <li><a href="https://pandas.pydata.org/" class="text-blue-500 hover:underline" target="_blank">Pandas (Python library for data manipulation)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Data Visualization & Graphing:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://charts.google.com/" class="text-blue-500 hover:underline" target="_blank">Google Charts (Web-based charts)</a></li>
+                                <li><a href="https://public.tableau.com/en-us/s/" class="text-blue-500 hover:underline" target="_blank">Tableau Public (Free data visualization software)</a></li>
+                                <li><a href="https://matplotlib.org/" class="text-blue-500 hover:underline" target="_blank">Matplotlib (Python plotting library)</a></li>
+                                <li><a href="https://seaborn.pydata.org/" class="text-blue-500 hover:underline" target="_blank">Seaborn (Python statistical data visualization)</a></li>
+                                <li><a href="https://plot.ly/graphing-libraries/" class="text-blue-500 hover:underline" target="_blank">Plotly (Interactive graphing libraries for Python, R, JS)</a></li>
+                                <li><a href="https://flourish.studio/" class="text-blue-500 hover:underline" target="_blank">Flourish (Easy data visualization & storytelling)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Design, Simulation & Prototyping:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.tinkercad.com/" class="text-blue-500 hover:underline" target="_blank">TinkerCAD (Free, easy 3D design for beginners)</a></li>
+                                <li><a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators" class="text-blue-500 hover:underline" target="_blank">Autodesk Fusion 360 (Free for students, advanced CAD)</a></li>
+                                <li><a href="https://www.arduino.cc/en/software" class="text-blue-500 hover:underline" target="_blank">Arduino IDE (For electronics prototyping)</a></li>
+                                <li><a href="https://scratch.mit.edu/" class="text-blue-500 hover:underline" target="_blank">Scratch (Visual programming for simulations/games)</a></li>
+                                <li><a href="https://www.blender.org/" class="text-blue-500 hover:underline" target="_blank">Blender (Free & open-source 3D creation suite)</a></li>
+                                <li><a href="https://www.simscale.com/academic-program/" class="text-blue-500 hover:underline" target="_blank">SimScale (Cloud-based simulation platform, academic access)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Version Control:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://git-scm.com/downloads" class="text-blue-500 hover:underline" target="_blank">Git (Version control system)</a></li>
+                                <li><a href="https://github.com/" class="text-blue-500 hover:underline" target="_blank">GitHub (Platform for hosting code with Git)</a></li>
+                                <li><a href="https://docs.github.com/en/get-started/quickstart/hello-world" class="text-blue-500 hover:underline" target="_blank">GitHub Hello World Tutorial</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 sm:p-8 rounded-b-2xl text-center">
+            <p class="text-sm sm:text-base mb-2">
+                © 2025 Student Science Research Hub. All rights reserved.
+            </p>
+            <p class="text-xs sm:text-sm opacity-80">
+                This page was created with the assistance of AI, and some links may not work properly. If a link does not work properly or you would like a resource added to the list, email <a href="mailto:smayer@cornwallschools.com" class="underline hover:text-blue-300">smayer@cornwallschools.com</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a content section and updates its icon.
+         * @param {string} contentId The ID of the content div to toggle.
+         */
+        function toggleSection(contentId) {
+            const content = document.getElementById(contentId);
+            // Assuming icon ID is contentId with '-content' replaced by '-icon'
+            const icon = document.getElementById(contentId.replace('-content', '-icon'));
+
+            if (content.classList.contains('hidden')) {
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('block'); // Use 'block' for display
+                icon.textContent = '−'; // Change icon to minus
+                icon.classList.remove('rotate-0');
+                icon.classList.add('rotate-45'); // Rotate for a visual effect
+            } else {
+                // Hide content
+                content.classList.remove('block');
+                content.classList.add('hidden');
+                icon.textContent = '+'; // Change icon back to plus
+                icon.classList.remove('rotate-45');
+                icon.classList.add('rotate-0');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Area Resources: Textbooks & Open Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Style for the expand/collapse icon */
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        .rotate-0 {
+            transform: rotate(0deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 sm:p-8 rounded-t-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
+                📚 Content Area Resources: Textbooks & Open Education
+            </h1>
+            <p class="text-lg sm:text-xl text-center opacity-90">
+                Deepen your understanding in specific scientific disciplines.
+            </p>
+        </header>
+
+        <main class="p-6 sm:p-8 md:p-10">
+            <a href="index.html" class="inline-block mb-6 py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-sm hover:bg-gray-300 transition-colors duration-200">
+                &larr; Back to Home
+            </a>
+
+            <section class="bg-gray-50 p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    Deepen your understanding in specific scientific disciplines with these free textbooks and open educational resources.
+                </p>
+                <button class="flex items-center justify-between w-full py-2 px-4 bg-blue-100 text-blue-800 font-semibold rounded-lg shadow-sm hover:bg-blue-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="toggleSection('content-area-resources-content')">
+                    <span>View All Resources</span>
+                    <span id="content-area-resources-icon" class="transform transition-transform duration-200">+</span>
+                </button>
+                <div id="content-area-resources-content" class="mt-4 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>Free Textbooks (Open Educational Resources - OER):</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://openstax.org/" class="text-blue-500 hover:underline" target="_blank">OpenStax (Peer-reviewed, open textbooks for college & high school)</a></li>
+                                <li><a href="https://www.ck12.org/student/" class="text-blue-500 hover:underline" target="_blank">CK-12 Foundation (Free K-12 STEM textbooks and resources)</a></li>
+                                <li><a href="https://pressbooks.library.ryerson.ca/open-textbooks/" class="text-blue-500 hover:underline" target="_blank">Directory of Open Access Books (DOAB)</a></li>
+                                <li><a href="https://www.oercommons.org/" class="text-blue-500 hover:underline" target="_blank">OER Commons (Open Education Resources Library)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Online Courses & Video Lectures (MOOCs):</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.coursera.org/browse/science" class="text-blue-500 hover:underline" target="_blank">Coursera: Science Courses</a></li>
+                                <li><a href="https://www.edx.org/learn/science" class="text-blue-500 hover:underline" target="_blank">edX: Science Courses</a></li>
+                                <li><a href="https://www.khanacademy.org/science" class="text-blue-500 hover:underline" target="_blank">Khan Academy: Science (Biology, Chemistry, Physics, etc.)</a></li>
+                                <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=science" class="text-blue-500 hover:underline" target="_blank">MIT OpenCourseWare: Science (Free course materials)</a></li>
+                                <li><a href="https://www.youtube.com/user/crashcourse" class="text-blue-500 hover:underline" target="_blank">Crash Course (YouTube channel for various subjects, incl. science)</a></li>
+                                <li><a href="https://www.youtube.com/user/scishow" class="text-blue-500 hover:underline" target="_blank">SciShow (YouTube channel for science topics)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Interactive Learning & Simulations:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://phet.colorado.edu/" class="text-blue-500 hover:underline" target="_blank">PhET Interactive Simulations (Physics, Chemistry, Math, Earth Science)</a></li>
+                                <li><a href="https://www.concord.org/projects/molecular-workbench/" class="text-blue-500 hover:underline" target="_blank">The Concord Consortium: Molecular Workbench</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 sm:p-8 rounded-b-2xl text-center">
+            <p class="text-sm sm:text-base mb-2">
+                © 2025 Student Science Research Hub. All rights reserved.
+            </p>
+            <p class="text-xs sm:text-sm opacity-80">
+                This page was created with the assistance of AI, and some links may not work properly. If a link does not work properly or you would like a resource added to the list, email <a href="mailto:smayer@cornwallschools.com" class="underline hover:text-blue-300">smayer@cornwallschools.com</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a content section and updates its icon.
+         * @param {string} contentId The ID of the content div to toggle.
+         */
+        function toggleSection(contentId) {
+            const content = document.getElementById(contentId);
+            // Assuming icon ID is contentId with '-content' replaced by '-icon'
+            const icon = document.getElementById(contentId.replace('-content', '-icon'));
+
+            if (content.classList.contains('hidden')) {
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('block'); // Use 'block' for display
+                icon.textContent = '−'; // Change icon to minus
+                icon.classList.remove('rotate-0');
+                icon.classList.add('rotate-45'); // Rotate for a visual effect
+            } else {
+                // Hide content
+                content.classList.remove('block');
+                content.classList.add('hidden');
+                icon.textContent = '+'; // Change icon back to plus
+                icon.classList.remove('rotate-45');
+                icon.classList.add('rotate-0');
+            }
+        }
+    </script>
+</body>
+</html>

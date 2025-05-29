@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Essential Tools for Researchers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Style for the expand/collapse icon */
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        .rotate-0 {
+            transform: rotate(0deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 sm:p-8 rounded-t-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
+                🎒 Other Essential Tools for Researchers
+            </h1>
+            <p class="text-lg sm:text-xl text-center opacity-90">
+                Enhance your research experience.
+            </p>
+        </header>
+
+        <main class="p-6 sm:p-8 md:p-10">
+            <a href="index.html" class="inline-block mb-6 py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-sm hover:bg-gray-300 transition-colors duration-200">
+                &larr; Back to Home
+            </a>
+
+            <section class="bg-gray-50 p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    Beyond the core scientific process, these general tools and tips can significantly enhance your research experience.
+                </p>
+                <button class="flex items-center justify-between w-full py-2 px-4 bg-blue-100 text-blue-800 font-semibold rounded-lg shadow-sm hover:bg-blue-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="toggleSection('other-tools-content')">
+                    <span>View All Resources</span>
+                    <span id="other-tools-icon" class="transform transition-transform duration-200">+</span>
+                </button>
+                <div id="other-tools-content" class="mt-4 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>Citation Management & Academic Writing:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.zotero.org/" class="text-blue-500 hover:underline" target="_blank">Zotero (Free, open-source reference management)</a></li>
+                                <li><a href="https://www.mendeley.com/reference-management/reference-manager" class="text-blue-500 hover:underline" target="_blank">Mendeley (Reference manager and academic social network)</a></li>
+                                <li><a href="https://www.grammarly.com/" class="text-blue-500 hover:underline" target="_blank">Grammarly (Writing assistant)</a></li>
+                                <li><a href="https://www.scribbr.com/citing-sources/" class="text-blue-500 hover:underline" target="_blank">Scribbr: Citation Guides (APA, MLA, Chicago)</a></li>
+                                <li><a href="https://www.bibme.org/" class="text-blue-500 hover:underline" target="_blank">BibMe (Citation generator)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Note-Taking, Organization & Collaboration:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.notion.so/" class="text-blue-500 hover:underline" target="_blank">Notion (All-in-one workspace for notes, tasks, databases)</a></li>
+                                <li><a href="https://evernote.com/" class="text-blue-500 hover:underline" target="_blank">Evernote (Note-taking and organization)</a></li>
+                                <li><a href="https://keep.google.com/" class="text-blue-500 hover:underline" target="_blank">Google Keep (Simple note-taking)</a></li>
+                                <li><a href="https://docs.google.com/" class="text-blue-500 hover:underline" target="_blank">Google Docs/Sheets/Slides (Collaboration suite)</a></li>
+                                <li><a href="https://trello.com/" class="text-blue-500 hover:underline" target="_blank">Trello (Visual project management)</a></li>
+                                <li><a href="https://asana.com/" class="text-blue-500 hover:underline" target="_blank">Asana (Work management platform)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Science Communication & Critical Thinking:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.scicomm.xyz/" class="text-blue-500 hover:underline" target="_blank">SciComm.xyz (Resources for science communication)</a></li>
+                                <li><a href="https://www.coursera.org/courses?query=critical%20thinking" class="text-blue-500 hover:underline" target="_blank">Coursera: Critical Thinking Courses (Online courses)</a></li>
+                                <li><a href="https://www.edx.org/learn/scientific-thinking" class="text-blue-500 hover:underline" target="_blank">edX: Scientific Thinking Courses (Online courses)</a></li>
+                                <li><a href="https://www.ted.com/playlists/19/the_scientific_method" class="text-blue-500 hover:underline" target="_blank">TED Talks: The Scientific Method & Critical Thinking</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>General Productivity & Learning:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.forestapp.cc/" class="text-blue-500 hover:underline" target="_blank">Forest (Focus timer app)</a></li>
+                                <li><a href="https://www.pomodorotechnique.com/" class="text-blue-500 hover:underline" target="_blank">Pomodoro Technique (Time management method)</a></li>
+                                <li><a href="https://www.mindmeister.com/" class="text-blue-500 hover:underline" target="_blank">MindMeister (Online mind mapping)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 sm:p-8 rounded-b-2xl text-center">
+            <p class="text-sm sm:text-base mb-2">
+                © 2025 Student Science Research Hub. All rights reserved.
+            </p>
+            <p class="text-xs sm:text-sm opacity-80">
+                This page was created with the assistance of AI, and some links may not work properly. If a link does not work properly or you would like a resource added to the list, email <a href="mailto:smayer@cornwallschools.com" class="underline hover:text-blue-300">smayer@cornwallschools.com</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a content section and updates its icon.
+         * @param {string} contentId The ID of the content div to toggle.
+         */
+        function toggleSection(contentId) {
+            const content = document.getElementById(contentId);
+            // Assuming icon ID is contentId with '-content' replaced by '-icon'
+            const icon = document.getElementById(contentId.replace('-content', '-icon'));
+
+            if (content.classList.contains('hidden')) {
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('block'); // Use 'block' for display
+                icon.textContent = '−'; // Change icon to minus
+                icon.classList.remove('rotate-0');
+                icon.classList.add('rotate-45'); // Rotate for a visual effect
+            } else {
+                // Hide content
+                content.classList.remove('block');
+                content.classList.add('hidden');
+                icon.textContent = '+'; // Change icon back to plus
+                icon.classList.remove('rotate-45');
+                icon.classList.add('rotate-0');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Method & Processes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Style for the expand/collapse icon */
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        .rotate-0 {
+            transform: rotate(0deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 sm:p-8 rounded-t-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
+                🔬 Research & Development Processes and The Scientific Method
+            </h1>
+            <p class="text-lg sm:text-xl text-center opacity-90">
+                Systematic approaches to scientific inquiry.
+            </p>
+        </header>
+
+        <main class="p-6 sm:p-8 md:p-10">
+            <a href="index.html" class="inline-block mb-6 py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-sm hover:bg-gray-300 transition-colors duration-200">
+                &larr; Back to Home
+            </a>
+
+            <section class="bg-gray-50 p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    Whether you're conducting an experiment or developing a new product, understanding the systematic approaches to scientific inquiry is crucial.
+                </p>
+                <button class="flex items-center justify-between w-full py-2 px-4 bg-blue-100 text-blue-800 font-semibold rounded-lg shadow-sm hover:bg-blue-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="toggleSection('scientific-method-content')">
+                    <span>View All Resources</span>
+                    <span id="scientific-method-icon" class="transform transition-transform duration-200">+</span>
+                </button>
+                <div id="scientific-method-content" class="mt-4 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>
+                            <strong>The Scientific Method Steps:</strong>
+                            <p class="ml-4 mt-2">A systematic approach to understanding the natural world:</p>
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li><strong>Observation:</strong> Noticing a phenomenon or problem.</li>
+                                <li><strong>Question:</strong> Forming a specific question about the observation.</li>
+                                <li><strong>Hypothesis:</strong> Proposing a testable explanation or prediction.</li>
+                                <li><strong>Experiment:</strong> Designing and conducting a controlled test to evaluate the hypothesis.</li>
+                                <li><strong>Analysis:</strong> Interpreting the data collected from the experiment.</li>
+                                <li><strong>Conclusion:</strong> Summarizing findings and determining if the hypothesis was supported or refuted.</li>
+                                <li><strong>Communication:</strong> Sharing results with the scientific community.</li>
+                            </ul>
+                            <p class="ml-4 mt-2">
+                                <em>Example:</em> Observing that plants grow differently under various light colors, leading to the question, "Does the color of light affect plant growth?"
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Experimental Design:</strong>
+                            <p class="ml-4 mt-2">
+                                The detailed plan for conducting an experiment to ensure valid and reliable results. Key elements include:
+                            </p>
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li><strong>Controls:</strong> A group or condition that remains unchanged, serving as a baseline for comparison.
+                                    <p class="ml-4 mt-1"><em>Example:</em> In a plant growth experiment testing light color, a control group would receive white light.</p>
+                                </li>
+                                <li><strong>Variables:</strong> Factors that can change or be changed.
+                                    <ul class="list-square list-inside ml-4">
+                                        <li><strong>Independent Variable (IV):</strong> The factor you intentionally change (e.g., color of light).</li>
+                                        <li><strong>Dependent Variable (DV):</strong> The factor you measure that responds to the IV (e.g., plant height, leaf count).</li>
+                                        <li><strong>Controlled Variables (Constants):</strong> Factors kept the same to ensure a fair test (e.g., amount of water, temperature, plant species, soil type).</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Sample Size:</strong> The number of subjects or trials in each group. A larger sample size generally increases the reliability of results.</li>
+                                <li><strong>Replication:</strong> Repeating the experiment multiple times to confirm consistency of results and reduce the impact of random error.</li>
+                                <li><strong>Blinding:</strong> Concealing treatment assignments from participants or researchers to prevent bias (e.g., single-blind, double-blind studies).</li>
+                                <li><strong>Randomization:</strong> Assigning subjects to groups randomly to ensure groups are comparable and reduce systematic bias.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Engineering Design Process:</strong>
+                            <p class="ml-4 mt-2">
+                                A cyclical, iterative process used to develop solutions to problems, particularly in engineering and product development.
+                            </p>
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li><strong>Define the Problem:</strong> Clearly identify the need or problem to be solved, including constraints and criteria.</li>
+                                <li><strong>Ideate:</strong> Brainstorm and develop multiple possible solutions.</li>
+                                <li><strong>Design/Prototype:</strong> Create a detailed plan and build a preliminary version of the solution.</li>
+                                <li><strong>Test:</strong> Evaluate the prototype against the defined criteria and constraints.</li>
+                                <li><strong>Iterate:</strong> Refine and improve the design based on test results and feedback. This step often leads back to earlier stages.</li>
+                                <li><strong>Communicate:</strong> Share the solution, process, and findings with others.</li>
+                            </ul>
+                            <p class="ml-4 mt-2">
+                                <em>Example:</em> Designing a new water filter for a community: defining the need for clean water, brainstorming filter types, building a prototype, testing its effectiveness, improving the design, and presenting the final product.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Key Concepts in Scientific Inquiry:</strong>
+                            <ul class="list-circle list-inside ml-8 space-y-1">
+                                <li>
+                                    <strong>Data Collection:</strong> The process of gathering information.
+                                    <p class="ml-4 mt-1"><em>Example:</em> Recording plant heights daily, counting bacterial colonies, or administering surveys.</p>
+                                </li>
+                                <li>
+                                    <strong>Qualitative vs. Quantitative Data:</strong>
+                                    <ul class="list-square list-inside ml-4">
+                                        <li><strong>Qualitative Data:</strong> Descriptive, non-numerical observations (e.g., color changes, textures, behaviors).</li>
+                                        <li><strong>Quantitative Data:</strong> Numerical measurements (e.g., temperature in Celsius, height in cm, number of organisms).</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Ethical Considerations:</strong> Principles guiding responsible conduct in research, especially when involving humans or animals.
+                                    <p class="ml-4 mt-1"><em>Example:</em> Ensuring informed consent from human participants, minimizing harm to animals, maintaining data privacy.</p>
+                                </li>
+                                <li>
+                                    <strong>Peer Review:</strong> The evaluation of scientific work by others working in the same field, crucial for validating research before publication.
+                                    <p class="ml-4 mt-1"><em>Example:</em> Scientists submitting their research paper to a journal, where other experts review it for accuracy, methodology, and significance.</p>
+                                </li>
+                                <li>
+                                    <strong>Scientific Integrity:</strong> Adherence to ethical and intellectual honesty in all aspects of scientific research.
+                                    <p class="ml-4 mt-1"><em>Example:</em> Accurately reporting all data, even if it doesn't support the hypothesis; avoiding plagiarism.</p>
+                                </li>
+                                <li>
+                                    <strong>Bias:</strong> A systematic error in a study that leads to an incorrect conclusion.
+                                    <p class="ml-4 mt-1"><em>Example:</em> Observer bias (researcher's expectations influence observations), selection bias (non-random participant selection).</p>
+                                </li>
+                                <li>
+                                    <strong>Validity:</strong> The extent to which a test or experiment measures what it is intended to measure.
+                                    <p class="ml-4 mt-1"><em>Example:</em> If a survey truly measures anxiety levels, it has high validity.</p>
+                                </li>
+                                <li>
+                                    <strong>Reliability:</strong> The consistency of a measure or experiment. If you repeat the experiment, you should get similar results.
+                                    <p class="ml-4 mt-1"><em>Example:</em> A scale that consistently gives the same weight reading for the same object is reliable.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Resources:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.sciencebuddies.org/science-fair-projects/science-fair/steps-of-the-scientific-method" class="text-blue-500 hover:underline" target="_blank">Science Buddies: Steps of the Scientific Method</a></li>
+                                <li><a href="https://www.khanacademy.org/science/high-school-biology/hs-biology-foundations/hs-scientific-method/a/the-scientific-method" class="text-blue-500 hover:underline" target="_blank">Khan Academy: The Scientific Method & Experimental Design</a></li>
+                                <li><a href="https://www.nasa.gov/stem/forstudents/5-8/engineering-design-process.html" class="text-blue-500 hover:underline" target="_blank">NASA: Engineering Design Process</a></li>
+                                <li><a href="https://www.niehs.nih.gov/research/resources/bioethics/index.cfm" class="text-blue-500 hover:underline" target="_blank">NIEHS: Bioethics Resources</a></li>
+                                <li><a href="https://www.scientificamerican.com/article/what-is-peer-review/" class="text-blue-500 hover:underline" target="_blank">Scientific American: What is Peer Review?</a></li>
+                                <li><a href="https://www.nature.com/nature/journal/v486/n7401/full/486001a.html" class="text-blue-500 hover:underline" target="_blank">Nature: Ten simple rules for a good scientific paper</a></li>
+                                <li><a href="https://www.apa.org/education-career/guide/ethical-research" class="text-blue-500 hover:underline" target="_blank">APA: Ethical Principles of Psychologists and Code of Conduct</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 sm:p-8 rounded-b-2xl text-center">
+            <p class="text-sm sm:text-base mb-2">
+                © 2025 Student Science Research Hub. All rights reserved.
+            </p>
+            <p class="text-xs sm:text-sm opacity-80">
+                This page was created with the assistance of AI, and some links may not work properly. If a link does not work properly or you would like a resource added to the list, email <a href="mailto:smayer@cornwallschools.com" class="underline hover:text-blue-300">smayer@cornwallschools.com</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a content section and updates its icon.
+         * @param {string} contentId The ID of the content div to toggle.
+         */
+        function toggleSection(contentId) {
+            const content = document.getElementById(contentId);
+            // Assuming icon ID is contentId with '-content' replaced by '-icon'
+            const icon = document.getElementById(contentId.replace('-content', '-icon'));
+
+            if (content.classList.contains('hidden')) {
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('block'); // Use 'block' for display
+                icon.textContent = '−'; // Change icon to minus
+                icon.classList.remove('rotate-0');
+                icon.classList.add('rotate-45'); // Rotate for a visual effect
+            } else {
+                // Hide content
+                content.classList.remove('block');
+                content.classList.add('hidden');
+                icon.textContent = '+'; // Change icon back to plus
+                icon.classList.remove('rotate-45');
+                icon.classList.add('rotate-0');
+            }
+        }
+    </script>
+</body>
+</html>

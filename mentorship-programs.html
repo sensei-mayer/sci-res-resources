@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship, Pre-College Programs & Internships</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            color: #333;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Style for the expand/collapse icon */
+        .rotate-45 {
+            transform: rotate(45deg);
+        }
+        .rotate-0 {
+            transform: rotate(0deg);
+        }
+        .transition-transform {
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 md:p-8">
+    <div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+        <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white p-6 sm:p-8 rounded-t-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
+                🤝 Mentorship, Pre-College Programs & Internships
+            </h1>
+            <p class="text-lg sm:text-xl text-center opacity-90">
+                Gain invaluable experience and guidance.
+            </p>
+        </header>
+
+        <main class="p-6 sm:p-8 md:p-10">
+            <a href="index.html" class="inline-block mb-6 py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow-sm hover:bg-gray-300 transition-colors duration-200">
+                &larr; Back to Home
+            </a>
+
+            <section class="bg-gray-50 p-6 rounded-xl shadow-md mb-8 border border-gray-200">
+                <p class="text-gray-700 mb-4">
+                    Gain invaluable experience and guidance through these opportunities designed for high school students.
+                </p>
+                <button class="flex items-center justify-between w-full py-2 px-4 bg-blue-100 text-blue-800 font-semibold rounded-lg shadow-sm hover:bg-blue-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" onclick="toggleSection('mentorship-programs-content')">
+                    <span>View All Resources</span>
+                    <span id="mentorship-programs-icon" class="transform transition-transform duration-200">+</span>
+                </button>
+                <div id="mentorship-programs-content" class="mt-4 hidden">
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li><strong>National & University Programs:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.ssp.org/" class="text-blue-500 hover:underline" target="_blank">Summer Science Program (SSP)</a></li>
+                                <li><a href="https://www.cee.org/research-science-institute" class="text-blue-500 hover:underline" target="_blank">Research Science Institute (RSI)</a></li>
+                                <li><a href="https://www.jacksonlab.org/education-and-learning/high-school-programs" class="text-blue-500 hover:underline" target="_blank">Jackson Laboratory High School Programs</a></li>
+                                <li><a href="https://www.nih.gov/training-extramural-research/training-programs/high-school-programs" class="text-blue-500 hover:underline" target="_blank">NIH High School Programs</a></li>
+                                <li><a href="https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=505191" class="text-blue-500 hover:underline" target="_blank">NSF Research Experiences for Undergraduates (REU) - some high school eligibility</a></li>
+                                <li><a href="https://www.collegeboard.org/programs/summer-academic-programs" class="text-blue-500 hover:underline" target="_blank">College Board: Summer Academic Programs Search</a></li>
+                                <li><a href="https://www.bu.edu/summer/high-school-programs/" class="text-blue-500 hover:underline" target="_blank">Boston University Summer Term for High School Students</a></li>
+                                <li><a href="https://cty.jhu.edu/programs/high-school/" class="text-blue-500 hover:underline" target="_blank">Johns Hopkins Center for Talented Youth (CTY) High School Programs</a></li>
+                                <li><a href="https://www.cosi.org/educators/high-school-programs/" class="text-blue-500 hover:underline" target="_blank">COSI (Center of Science and Industry) High School Programs</a></li>
+                                <li><a href="https://www.sciencedirect.com/topics/engineering/pre-college-programs" class="text-blue-500 hover:underline" target="_blank">ScienceDirect: Pre-College Engineering Programs (overview)</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Mentorship & Internship Search:</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.mentornet.org/" class="text-blue-500 hover:underline" target="_blank">MentorNet (Online STEM Mentoring)</a></li>
+                                <li><a href="https://www.pathwaystoscience.org/Highschool.asp" class="text-blue-500 hover:underline" target="_blank">Pathways to Science (List of STEM programs/internships)</a></li>
+                                <li><a href="https://www.indeed.com/q-high-school-internships-l-new-york-state-jobs.html" class="text-blue-500 hover:underline" target="_blank">Indeed: High School Internships in NYS (Search example)</a></li>
+                                <li><a href="https://www.linkedin.com/jobs/high-school-internships/" class="text-blue-500 hover:underline" target="_blank">LinkedIn: High School Internships (General search)</a></li>
+                                <li><a href="https://www.handshake.com/" class="text-blue-500 hover:underline" target="_blank">Handshake (Career network for students and recent grads)</a></li>
+                                <li><a href="https://www.internships.com/" class="text-blue-500 hover:underline" target="_blank">Internships.com (Internship search platform)</a></li>
+                                <li><a href="https://www.nasa.gov/stem/forstudents/highschool/internships/index.html" class="text-blue-500 hover:underline" target="_blank">NASA High School Internships</a></li>
+                            </ul>
+                        </li>
+                        <li><strong>Online Learning & MOOCs (for foundational knowledge):</strong>
+                            <ul class="list-circle list-inside ml-4">
+                                <li><a href="https://www.coursera.org/" class="text-blue-500 hover:underline" target="_blank">Coursera (Online courses from universities and companies)</a></li>
+                                <li><a href="https://www.edx.org/" class="text-blue-500 hover:underline" target="_blank">edX (Online courses from top institutions)</a></li>
+                                <li><a href="https://www.khanacademy.org/" class="text-blue-500 hover:underline" target="_blank">Khan Academy (Free online courses and practice)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 sm:p-8 rounded-b-2xl text-center">
+            <p class="text-sm sm:text-base mb-2">
+                © 2025 Student Science Research Hub. All rights reserved.
+            </p>
+            <p class="text-xs sm:text-sm opacity-80">
+                This page was created with the assistance of AI, and some links may not work properly. If a link does not work properly or you would like a resource added to the list, email <a href="mailto:smayer@cornwallschools.com" class="underline hover:text-blue-300">smayer@cornwallschools.com</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        /**
+         * Toggles the visibility of a content section and updates its icon.
+         * @param {string} contentId The ID of the content div to toggle.
+         */
+        function toggleSection(contentId) {
+            const content = document.getElementById(contentId);
+            // Assuming icon ID is contentId with '-content' replaced by '-icon'
+            const icon = document.getElementById(contentId.replace('-content', '-icon'));
+
+            if (content.classList.contains('hidden')) {
+                // Show content
+                content.classList.remove('hidden');
+                content.classList.add('block'); // Use 'block' for display
+                icon.textContent = '−'; // Change icon to minus
+                icon.classList.remove('rotate-0');
+                icon.classList.add('rotate-45'); // Rotate for a visual effect
+            } else {
+                // Hide content
+                content.classList.remove('block');
+                content.classList.add('hidden');
+                icon.textContent = '+'; // Change icon back to plus
+                icon.classList.remove('rotate-45');
+                icon.classList.add('rotate-0');
+            }
+        }
+    </script>
+</body>
+</html>
